@@ -29,8 +29,8 @@ namespace Phoneword
             string translatedNumber = string.Empty;
             translateButton.Click += (sender, e) =>
             {
-        // Translate user’s alphanumeric phone number to numeric
-        translatedNumber = PhoneTranslator.ToNumber(phoneNumberText.Text);
+                // Translate user’s alphanumeric phone number to numeric
+                translatedNumber = PhoneTranslator.ToNumber(phoneNumberText.Text);
                 if (string.IsNullOrWhiteSpace(translatedNumber))
                 {
                     translatedPhoneWord.Text = "";
